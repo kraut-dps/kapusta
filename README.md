@@ -24,7 +24,7 @@ class Page extends View
 
     public function render() { ?>
         <?php $layout = $this->begin(new Layout('title1')) ?>
-            <?php $layout->sTitle = 'title2'; ?>
+            <?php $layout->title = 'title2'; ?>
             content
         <?php $layout->end(true) ?>
     <?php }
