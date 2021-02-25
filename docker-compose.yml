@@ -1,0 +1,18 @@
+version: '3'
+services:
+  kapusta:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: kapusta
+    env_file:
+      - ./.env
+    volumes:
+      - .:/var/www/html
+    networks:
+      - kapusta-net
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+networks:
+  kapusta-net:
+    driver: bridge

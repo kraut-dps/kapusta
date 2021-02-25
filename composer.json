@@ -1,0 +1,20 @@
+{
+  "name": "kraut-dps/kapusta",
+  "type": "library",
+  "description": "Simple PHP template engine",
+  "license": "MIT",
+  "require-dev": {
+    "php": ">=8.0.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kapusta\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kapusta\\tests\\": "tests/"
+    }
+  }
+}
